@@ -1,0 +1,26 @@
+==============================================================================
+               M A M E   C O N T R O L L E R   P R O J E C T
+==============================================================================
+This file is part of the MAME Controller Project
+Copyright (C) 2011 Dane Gardner
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+==============================================================================
+
+This is an extension of the example keyboard code provided at <http://www.pjrc.com/teensy/usb_keyboard.html>. I've modified it to allow more than 6 keys to be pressed at a time.  Please see usb_keyboard.c for more information on how I've modified it, and the license for that source code.
+
+Right now the keys are hard coded into the source... but in the future, I think I will write a desktop application and interfaces to modify these key codes at run time.
+
+If you have any problems with this software, please contact me at <dane@danegardner.com>.
