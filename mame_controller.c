@@ -28,7 +28,7 @@
 //#define MAME2
 
 uint8_t keymap[25] = {
-#ifdef EXAMPLE
+#if defined(EXAMPLE)
                        KEY_A,               // Pin 01
                        KEY_B,               // Pin 02
                        KEY_C,               // Pin 03
@@ -54,7 +54,7 @@ uint8_t keymap[25] = {
                        KEY_W,               // Pin 23
                        KEY_X,               // Pin 24
                        KEY_Y                // Pin 25
-#elseif MAME1
+#elif defined(MAME1)
                        KEY_1,               // Pin 01 (Player 1 Start)
                        KEY_5,               // Pin 02 (Player 1 Coin/Select)
                        KEY_RIGHT,           // Pin 03 (Player 1 Right)
@@ -80,7 +80,7 @@ uint8_t keymap[25] = {
                        KEY_NONE,            // Pin 23
                        KEY_NONE,            // Pin 24
                        KEY_NONE             // Pin 25
-#elseif MAME2
+#elif defined(MAME2)
                        KEY_2,               // Pin 01 (Player 2 Start)
                        KEY_6,               // Pin 02 (Player 2 Coin/Select)
                        KEY_G,               // Pin 03 (Player 2 Right)
@@ -183,8 +183,7 @@ int main(void)
       d_prev = d;
       e_prev = e;
       f_prev = f;
-
-      _delay_ms(2);   // Debounce
     }
+    _delay_ms(2);   // Debounce
 	}
 }
